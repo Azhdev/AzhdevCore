@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ACORE",
+  "name": "AzhdevCore",
+  "description": "a core-mod for azhdev's mods, doesnt do anything when istalled alone",
+  "version": "1.7.10-1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ['Azhdev'],
+  "credits": "",
+  "logoFile": "/assets/ACORE/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
