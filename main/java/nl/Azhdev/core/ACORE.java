@@ -1,15 +1,13 @@
 package nl.Azhdev.core;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import nl.Azhdev.core.api.packet.NetworkHandler;
 import nl.Azhdev.core.lib.Reference;
 import nl.Azhdev.core.proxies.IProxy;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(name = Reference.NAME, modid = Reference.MODID, version = Reference.VERSION)
 public class ACORE {

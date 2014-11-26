@@ -1,10 +1,9 @@
 package nl.Azhdev.core.api.packet;
 
 import io.netty.buffer.ByteBuf;
-import net.minecraft.block.Block;
 import net.minecraft.world.World;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 
 public abstract class LocationIntPacket<REQ extends IMessage> extends AbstractPacket<REQ>{
 	
@@ -37,10 +36,6 @@ public abstract class LocationIntPacket<REQ extends IMessage> extends AbstractPa
 	}
 	
 	public NetworkRegistry.TargetPoint getTargetPoint(World world, double updateDistance){
-		return new NetworkRegistry.TargetPoint(world.provider.dimensionId, x, y, z, updateDistance);
-	}
-	
-	protected Block getBlock(World world){
-		return world.getBlock(x, y, z);
+		return new NetworkRegistry.TargetPoint(world.provider.getDimensionId(), x, y, z, updateDistance);
 	}
 }

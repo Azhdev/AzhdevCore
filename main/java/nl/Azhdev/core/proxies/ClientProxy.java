@@ -1,10 +1,10 @@
 package nl.Azhdev.core.proxies;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.common.Loader;
 import nl.Azhdev.core.api.keybindings.KeyBindings;
-import cpw.mods.fml.client.FMLClientHandler;
-import cpw.mods.fml.client.registry.ClientRegistry;
-import cpw.mods.fml.common.Loader;
 
 public class ClientProxy extends CommonProxy{
 
